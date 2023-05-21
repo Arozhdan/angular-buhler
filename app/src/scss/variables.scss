@@ -3,6 +3,7 @@
 $primary: #34a79c;
 $secondary: #dcdcdc;
 $accent: #f59a1e;
+$success: #7e8f5e;
 $danger: #f4433c;
 
 // -- SPACING --
@@ -12,6 +13,8 @@ $spacer-half: $spacer / 2;
 $spacer-double: $spacer * 2;
 $spacer-triple: $spacer * 3;
 $spacer-quadruple: $spacer * 4;
+
+$navbar-height: 76.2px;
 
 // -- TRANSITIONS --
 $transition: all 0.3s ease-in-out;

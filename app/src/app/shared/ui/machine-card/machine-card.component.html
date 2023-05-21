@@ -1,1 +1,9 @@
-<p>machine-card works!</p>
+<div [class]="['machine-card','machine-card--'+variant, 'machine-card--'+machine.status]">
+  <span class="material-symbols-outlined status-icon">
+    {{statusIcon()}}
+  </span>
+  <span *ngIf="variant!=='compact'" class="material-symbols-outlined icon">
+    {{machine.icon}}
+  </span>
+  {{machine.name}}
+</div>

@@ -6,6 +6,13 @@
   Error loading data
 </div>
 
-<div *ngIf="status()==='idle' && machines()?.length" class="machines-grid">
-
+<div *ngIf="status()==='idle' && machines()?.length">
+  <div class="header">
+    <app-machine-card *ngFor="let machine of machines()" [machine]="machine" variant="compact" />
+  </div>
+  <div class="app">
+    <div class="machines-grid container">
+      <app-machine-card *ngFor="let machine of machines()" [machine]="machine" />
+    </div>
+  </div>
 </div>

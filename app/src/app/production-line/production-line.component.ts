@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ProductionLineService } from './production-line.service';
+import { MachineCardComponent } from '../shared/ui/machine-card/machine-card.component';
 
 @Component({
   selector: 'app-production-line',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MachineCardComponent],
   templateUrl: './production-line.component.html',
   styleUrls: ['./production-line.component.scss'],
 })

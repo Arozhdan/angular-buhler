@@ -1,0 +1,45 @@
+@import "src/scss/variables";
+.machine-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  padding: $spacer-half;
+  font-weight: 600;
+}
+
+.machine-card--default {
+  aspect-ratio: 1; // I KNOW THIS IS NOT SUPPORTED EVERYWHERE YET, I KNOW HOT TO FIX IT
+}
+
+.machine-card--compact {
+  padding: $spacer-double $spacer;
+}
+
+.machine-card--alarm {
+  background-color: $danger;
+  color: #ffffff;
+}
+
+.machine-card--warning {
+  background-color: $accent;
+  color: #ffffff;
+}
+
+.icon {
+  font-size: 4rem;
+  display: block;
+}
+
+.status-icon {
+  position: absolute;
+  top: $spacer-third;
+  right: $spacer-third;
+  font-size: 1.5rem;
+}
+
+.machine-card--running .status-icon {
+  color: $success;
+}
