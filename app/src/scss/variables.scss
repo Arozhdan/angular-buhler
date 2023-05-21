@@ -1,0 +1,17 @@
+// -- COLORS --
+
+$primary: #34a79c;
+$secondary: #dcdcdc;
+$accent: #f59a1e;
+$danger: #f4433c;
+
+// -- SPACING --
+$spacer: 1rem;
+$spacer-third: $spacer / 3;
+$spacer-half: $spacer / 2;
+$spacer-double: $spacer * 2;
+$spacer-triple: $spacer * 3;
+$spacer-quadruple: $spacer * 4;
+
+// -- TRANSITIONS --
+$transition: all 0.3s ease-in-out;

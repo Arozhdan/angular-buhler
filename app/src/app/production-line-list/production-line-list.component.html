@@ -1,0 +1,14 @@
+<div class="production-line-list">
+  <div *ngIf="!!user()?.lines?.length else login">
+    <div *ngFor="let line of user()?.lines; let i = index">
+      <a [routerLink]="['/production-line/', line]">
+        ({{i+1}})Production Line : {{line}}
+      </a>
+    </div>
+  </div>
+  <ng-template #login>
+    <h1 *ngIf="!user()?.lines?.length">
+      Please Sign In or Sign Up to create a production line
+    </h1>
+  </ng-template>
+</div>

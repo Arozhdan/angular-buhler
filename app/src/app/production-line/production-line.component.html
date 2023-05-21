@@ -1,0 +1,11 @@
+<div *ngIf="status()==='loading'">
+  Loading...
+</div>
+
+<div *ngIf="status()==='error'">
+  Error loading data
+</div>
+
+<div *ngIf="status()==='idle' && machines()?.length" class="machines-grid">
+
+</div>

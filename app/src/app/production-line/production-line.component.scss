@@ -1,0 +1,11 @@
+@import "src/scss/variables.scss";
+.production-line {
+  padding: $spacer-quadruple;
+}
+
+.machines-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $spacer-double;
+  margin-top: $spacer-double;
+}

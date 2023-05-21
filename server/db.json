@@ -1,0 +1,49 @@
+{
+	"lines": [
+		{
+			"id": "productionLine1",
+			"name": "Production Line"
+		}
+	],
+	"machines": [
+		{
+			"id": "1",
+			"name": "Scale",
+			"icon": "e8d7",
+			"status": "running",
+			"line": "productionLine1"
+		},
+		{
+			"id": "2",
+			"name": "Attacher",
+			"icon": "e86d",
+			"status": "alarm",
+			"line": "productionLine1"
+		},
+		{
+			"id": "3",
+			"name": "Packer",
+			"icon": "f7e6",
+			"status": "running",
+			"line": "productionLine1"
+		},
+		{
+			"id": "4",
+			"name": "Closer",
+			"icon": "e3ec",
+			"status": "warning",
+			"line": "productionLine1"
+		}
+	],
+	"users": [
+		{
+			"id": "1",
+			"name": "John Doe",
+			"email": "john@doe.com",
+			"role": "Operator",
+			"lines": [
+				"productionLine1"
+			]
+		}
+	]
+}
